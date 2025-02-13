@@ -1,0 +1,61 @@
+- summary: |
+    Проверка страницы товара
+  status: pass
+
+- summary: |
+    Проверка корзины
+  status: pass
+
+- summary: |
+    Проверка оформления заказа
+  status: fail
+
+- summary: |
+    Проверка сайта на разных мобильных устройствах
+  status: fail
+
+- summary: |
+    Проверка страниц с товарами
+  status: fail
+
+- summary: |
+    Проверка выбора языка
+  status: pass
+
+- summary: |
+    Проверка фильтра минимальной цены отрицательным числом
+  status: fail  
+
+- summary: |
+    Проверка фильтра минимальной цены
+  status: pass  
+
+- summary: |
+    Проверка фильтра максимальной цены
+  status: pass 
+
+- summary: |
+    Проверка фильтра максимальной цены выше порога
+  status: fail
+
+- summary: |
+    Проверка выбора категории
+  status: pass 
+
+- summary: |
+    Проверка чекбокс "In Stock"
+  status: pass 
+
+- summary: |
+    Проверка фильтра по производителю
+  status: pass 
+
+- summary: |
+    Проверка поле ввода "Search"
+  status: pass 
+
+- summary: |
+    Проверка кнопки "Очистить корзину"
+  status: pass 
+
+  
