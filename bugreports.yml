@@ -107,3 +107,31 @@
     У каждого товара должен быть рейтинг на странице товаров согласно задания
   actual-result: |
     На странице товаров у товаров рейтинга нету, только в карточке товаров
+
+- summary: |
+    Ошибка загрузки файла random.css
+  environment: |
+    Система:Windows 10 64-bit
+    Opera Версия Chromium:131.0.6778.266
+    Google Chrome Версия 133.0.6943.99 (Официальная сборка), (64 бит)
+  steps-to-reproduce: |
+    1. Открываем DevTools, вкладку Network
+    2. Обновить страницу(F5)
+  expected-result: |
+    В DevTools, вкладке Network, после обновления файл random.css имеет Status=200
+  actual-result: |
+    В DevTools, вкладке Network, после обновления файл random.css имеет Status=(failed)net::ERR_NAME_NOT_RESOLVED
+
+- summary: |
+    Ошибка загрузки файла author.js
+  environment: |
+    Система:Windows 10 64-bit
+    Opera Версия Chromium:131.0.6778.266
+    Google Chrome Версия 133.0.6943.99 (Официальная сборка), (64 бит)
+  steps-to-reproduce: |
+    1. Открываем DevTools, вкладку Network
+    2. Обновить страницу(F5)
+  expected-result: |
+    В DevTools, вкладке Network, после обновления файл author.js имеет Status=200
+  actual-result: |
+    В DevTools, вкладке Network, после обновления файл author.js имеет Status=(failed)net::ERR_NAME_NOT_RESOLVED    
