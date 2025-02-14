@@ -253,4 +253,52 @@
   expected-result: |
     Должна открыться страница, с которой переходили в корзину
 
+- summary: |
+    Проверка списка "Language" 
+  requirement: |
+    Проверка картинки списка "Language" 
+  prerequisites:
+    Открыта страница товаров. В чекбокс "In Stock" стоит галочка. Language-english.
+  test-data: |    
+      steps:
+    - Открыть раскрывающийся список "Language" 
+  expected-result: |
+    Перед языком English и Russian должны быть картинки с флагами
+
+- summary: |
+    Проверка рейтинга у товаров на странице товаров
+  requirement: |
+    Рейтинг товаров на странице товаров
+  prerequisites:
+    Открыта страница товаров. В чекбокс "In Stock" стоит галочка. Language-english.
+  test-data: |    
+      steps:
+  expected-result: |
+    У каждого товара должен быть рейтинг на странице товаров
+
+- summary: |
+    Проверка загрузки файла random.css
+  requirement: |
+    Проверка загрузки файла random.css
+  prerequisites:
+    Открыта страница товаров. В чекбокс "В наличии" стоит галочка. Язык-русский.
+  test-data: |    
+      steps:
+    - Открываем DevTools, вкладку Network
+    - Обновить страницу(F5)
+  expected-result: |
+    В DevTools, вкладке Network, после обновления файл random.css имеет Status=200 
+
+- summary: |
+    Проверка загрузки файла author.js
+  requirement: |
+    Проверка загрузки файла author.js
+  prerequisites:
+    Открыта страница товаров. В чекбокс "В наличии" стоит галочка. Язык-русский.
+  test-data: |    
+      steps:
+    - Открываем DevTools, вкладку Network
+    - Обновить страницу(F5)
+  expected-result: |
+    В DevTools, вкладке Network, после обновления файл author.js имеет Status=200     
 
