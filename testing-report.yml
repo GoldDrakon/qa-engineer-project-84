@@ -20,19 +20,19 @@
 
 - summary: |
     Проверка выбора языка
-  status: pass
+  status: fail
 
 - summary: |
     Проверка фильтра минимальной цены отрицательным числом
-  status: fail  
+  status: fail
 
 - summary: |
     Проверка фильтра минимальной цены
-  status: pass  
+  status: pass
 
 - summary: |
     Проверка фильтра максимальной цены
-  status: pass 
+  status: pass
 
 - summary: |
     Проверка фильтра максимальной цены выше порога
@@ -40,52 +40,60 @@
 
 - summary: |
     Проверка выбора категории
-  status: pass 
+  status: pass
 
 - summary: |
     Проверка чекбокс "In Stock"
-  status: pass 
+  status: pass
 
 - summary: |
     Проверка фильтра по производителю
-  status: pass 
+  status: pass
 
 - summary: |
     Проверка поле ввода "Search"
-  status: pass 
+  status: pass
 
 - summary: |
     Проверка кнопки "Очистить корзину"
-  status: pass 
+  status: pass
 
 - summary: |
     Проверка очистки корзины кнопкой "Очистить корзину"
-  status: fail 
+  status: fail
 
 - summary: |
     Проверка очистки корзины кнопкой "Удалить"
-  status: pass 
+  status: pass
 
 - summary: |
     Проверка кнопки "Продолжить покупки"
-  status: pass 
+  status: pass
 
 - summary: |
     Проверка кнопки "Магазин"
-  status: pass 
+  status: pass
 
 - summary: |
     Проверка списка "Language" 
-  status: fail 
+  status: fail
 
 - summary: |
     Проверка рейтинга у товаров на странице товаров
-  status: fail   
+  status: fail
 
 - summary: |
     Проверка загрузки файла random.css
-  status: fail   
+  status: fail
   
 - summary: |
     Проверка загрузки файла author.js
-  status: fail   
+  status: fail
+
+- summary: |
+    Проверка фильтрации по производителю на второй странице товаров
+  status: fail
+
+- summary: |
+    Проверка чек-боксов фильтрации по производителю
+  status: fail
