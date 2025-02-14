@@ -74,6 +74,18 @@
     Проверка кнопки "Магазин"
   status: pass 
 
+- summary: |
+    Проверка списка "Language" 
+  status: fail 
 
+- summary: |
+    Проверка рейтинга у товаров на странице товаров
+  status: fail   
 
+- summary: |
+    Проверка загрузки файла random.css
+  status: fail   
   
+- summary: |
+    Проверка загрузки файла author.js
+  status: fail   
