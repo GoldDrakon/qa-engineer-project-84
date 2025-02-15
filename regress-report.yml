@@ -1,119 +1,119 @@
 test-cases:
-- summary: |
-    Проверка карточки товара
-  status: pass
+  - summary: |
+      Проверка карточки товара
+    status: pass
 
-- summary: |
-    Проверка корзины
-  status: pass
+  - summary: |
+      Проверка корзины
+    status: pass
 
-- summary: |
-    Проверка оформления заказа
-  status: fail
+  - summary: |
+      Проверка оформления заказа
+    status: fail
 
-- summary: |
-    Проверка сайта на разных мобильных устройствах
-  status: fail
+  - summary: |
+      Проверка сайта на разных мобильных устройствах
+    status: fail
 
-- summary: |
-    Проверка страниц с товарами
-  status: fail
+  - summary: |
+      Проверка страниц с товарами
+    status: fail
 
-- summary: |
-    Проверка выбора языка
-  status: fail
+  - summary: |
+      Проверка выбора языка
+    status: fail
 
-- summary: |
-    Проверка фильтра минимальной цены отрицательным числом
-  status: fail
+  - summary: |
+      Проверка фильтра минимальной цены отрицательным числом
+    status: fail
 
-- summary: |
-    Проверка фильтра минимальной цены
-  status: pass
+  - summary: |
+      Проверка фильтра минимальной цены
+    status: pass
 
-- summary: |
-    Проверка фильтра максимальной цены
-  status: fail
+  - summary: |
+      Проверка фильтра максимальной цены
+    status: fail
 
-- summary: |
-    Проверка фильтра максимальной цены выше порога
-  status: fail
+  - summary: |
+      Проверка фильтра максимальной цены выше порога
+    status: fail
 
-- summary: |
-    Проверка выбора категории
-  status: fail
+  - summary: |
+      Проверка выбора категории
+    status: fail
 
-- summary: |
-    Проверка чекбокс "In Stock"
-  status: fail
+  - summary: |
+      Проверка чекбокс "In Stock"
+    status: fail
 
-- summary: |
-    Проверка фильтра по производителю
-  status: pass
+  - summary: |
+      Проверка фильтра по производителю
+    status: pass
 
-- summary: |
-    Проверка поле ввода "Search"
-  status: pass
+  - summary: |
+      Проверка поле ввода "Search"
+    status: pass
 
-- summary: |
-    Проверка кнопки "Очистить корзину"
-  status: pass
+  - summary: |
+      Проверка кнопки "Очистить корзину"
+    status: pass
 
-- summary: |
-    Проверка очистки корзины кнопкой "Очистить корзину"
-  status: fail
+  - summary: |
+      Проверка очистки корзины кнопкой "Очистить корзину"
+    status: fail
 
-- summary: |
-    Проверка очистки корзины кнопкой "Удалить"
-  status: pass
+  - summary: |
+      Проверка очистки корзины кнопкой "Удалить"
+    status: pass
 
-- summary: |
-    Проверка кнопки "Продолжить покупки"
-  status: pass
+  - summary: |
+      Проверка кнопки "Продолжить покупки"
+    status: pass
 
-- summary: |
-    Проверка кнопки "Магазин"
-  status: pass
+  - summary: |
+      Проверка кнопки "Магазин"
+    status: pass
 
-- summary: |
-    Проверка списка "Language" 
-  status: fail
+  - summary: |
+      Проверка списка "Language" 
+    status: fail
 
-- summary: |
-    Проверка рейтинга у товаров на странице товаров
-  status: fail
+  - summary: |
+      Проверка рейтинга у товаров на странице товаров
+    status: fail
 
-- summary: |
-    Проверка загрузки файла random.css
-  status: pass
+  - summary: |
+      Проверка загрузки файла random.css
+    status: pass
   
-- summary: |
-    Проверка загрузки файла author.js
-  status: pass
+  - summary: |
+      Проверка загрузки файла author.js
+    status: pass
 
-- summary: |
-    Проверка фильтрации по производителю на второй странице товаров
-  status: fail
+  - summary: |
+      Проверка фильтрации по производителю на второй странице товаров
+    status: fail
 
-- summary: |
-    Проверка чек-боксов фильтрации по производителю
-  status: fail
+  - summary: |
+      Проверка чек-боксов фильтрации по производителю
+    status: fail
 
-- summary: |
-    Проверка в корзине шапки таблицы заказа
-  status: fail
+  - summary: |
+      Проверка в корзине шапки таблицы заказа
+    status: fail
 
-- summary: |
-    Проверка в корзине столбцы количество товара и кнопок "Удалить"
-  status: fail
+  - summary: |
+      Проверка в корзине столбцы количество товара и кнопок "Удалить"
+    status: fail
  
-- summary: |
-    Проверка изменения масштаба в браузере
-  status: pass
+  - summary: |
+      Проверка изменения масштаба в браузере
+    status: pass
 
-- summary: |
-    Проверка возможности фильтрации без категории
-  status: pass
+  - summary: |
+      Проверка возможности фильтрации без категории
+    status: pass
   
 bugreports:
   - summary: |
@@ -158,7 +158,7 @@ bugreports:
     actual-result: |
       После второй страницы пропадает кнопка "Следующая". Фотографии некоторых товаров на страницах с товарами не помещаются.
 
-- summary: |
+  - summary: |
       Описание товара при смене языка остается на английском
     environment: |
       Система:Windows 10 64-bit
@@ -171,7 +171,7 @@ bugreports:
     actual-result: |
       Язык описания товаров в карточках товаров и на странице товаров, фильтры категории остаются на английском.  
 
-- summary: |
+  - summary: |
       Цена не может быть ниже нуля
     environment: |
       Система:Windows 10 64-bit
@@ -184,7 +184,7 @@ bugreports:
     actual-result: |
       Значение вводится 
 
-- summary: |
+  - summary: |
       При фильтре цены ломается верстка
     environment: |
       Система:Windows 10 64-bit
@@ -197,7 +197,7 @@ bugreports:
     actual-result: |
       Когда при фильтрации остается на странице один товар, верстка ломается
 
-- summary: |
+  - summary: |
       В фильтре цены можно ввести значение выше крайнего
     environment: |
       Система:Windows 10 64-bit
@@ -210,7 +210,7 @@ bugreports:
     actual-result: |
       В поле ввода обозначено крайнее значение=6577.499999999995. Но тестовое значение вводится.  
 
-- summary: |
+  - summary: |
       Пропадают кнопки "Next" и "Previous"
     environment: |
       Система:Windows 10 64-bit
@@ -225,7 +225,7 @@ bugreports:
     actual-result: |
       Пропадают кнопки "Next" и "Previous"
 
-- summary: |
+  - summary: |
       Фильтрация "В наличии" не работает
     environment: |
       Система:Windows 10 64-bit
@@ -238,7 +238,7 @@ bugreports:
     actual-result: |
       Фильтрация "В наличии" не работает. Пропадает кнопка "Next".
 
-- summary: |
+  - summary: |
       Корзина не очищается
     environment: |
       Система:Windows 10 64-bit
@@ -254,7 +254,7 @@ bugreports:
     actual-result: |
       После обновления страницы количество товаров в корзине становится столько же, сколько и до нажатия кнопки "Очистить корзину".
 
-- summary: |
+  - summary: |
       Отсутствует картинка языка English и Russian
     environment: |
       Система:Windows 10 64-bit
@@ -267,7 +267,7 @@ bugreports:
     actual-result: |
       Отсутствует картинка языка English и Russian
 
-- summary: |
+  - summary: |
       На странице товаров отсутствует рейтинг
     environment: |
       Система:Windows 10 64-bit
@@ -280,7 +280,7 @@ bugreports:
     actual-result: |
       На странице товаров у товаров рейтинга нету, только в карточке товаров
 
-- summary: |
+  - summary: |
       Отсутствует фильтрация по производителю на второй странице товаров
     environment: |
       Система:Windows 10 64-bit
@@ -294,7 +294,7 @@ bugreports:
     actual-result: |
       На левой панели фильтра по производителю нет выбора
 
-- summary: |
+  - summary: |
       Безымянный чек-бокс фильтрации по производителю
     environment: |
       Система:Windows 10 64-bit
@@ -308,7 +308,7 @@ bugreports:
     actual-result: |
       На всех страницах есть безымянный чек-бокс
 
-- summary: |
+  - summary: |
       В корзине нет шапки таблицы заказа
     environment: |
       Система:Windows 10 64-bit
@@ -322,7 +322,7 @@ bugreports:
     actual-result: |
       В корзине нет шапки таблицы заказа
 
-- summary: |
+  - summary: |
       В корзине столбцы количество товара и кнопки "Удалить" выровнены не ровно.
     environment: |
       Система:Windows 10 64-bit
