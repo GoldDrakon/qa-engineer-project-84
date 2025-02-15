@@ -112,8 +112,8 @@ test-cases:
     status: pass
 
   - summary: |
-    Проверка загрузки сайта
-  status: fail  
+      Проверка производительности сайта
+    status: fail  
   
 bugreports:
   - summary: |
