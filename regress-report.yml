@@ -110,6 +110,10 @@ test-cases:
   - summary: |
       Проверка возможности фильтрации без категории
     status: pass
+
+  - summary: |
+    Проверка загрузки сайта
+  status: fail  
   
 bugreports:
   - summary: |
@@ -331,3 +335,17 @@ bugreports:
       В корзине столбцы количество товара и кнопок "Удалить" должны быть выровнены ровно.
     actual-result: |
       В корзине столбцы количество товара и кнопок "Удалить" выровнены не ровно.
+
+  - summary: |
+      Проблемы с производительностью страницы
+    environment: |
+      Система:Windows 10 64-bit
+      Opera Версия Chromium:131.0.6778.266
+      Google Chrome Версия 133.0.6943.99 (Официальная сборка), (64 бит)
+    steps-to-reproduce: |
+      1. Открываем DevTools, вкладку Performance
+      2. Обновить страницу(F5)
+    expected-result: |
+      Локальные метрики должны быть Largest Contentful Paint (LCP)<=2.5s, Cumulative Layout Shift (CLS)<=0.1, Interaction to Next Paint (INP)<=200ms
+    actual-result: |
+      Cumulative Layout Shift (CLS) выше нормы
