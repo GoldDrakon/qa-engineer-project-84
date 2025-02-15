@@ -231,3 +231,17 @@
     Должна быть пустая категория
   actual-result: |
     Нет возможности фильтрации без категории
+
+- summary: |
+    Проблемы с производительностью страницы
+  environment: |
+    Система:Windows 10 64-bit
+    Opera Версия Chromium:131.0.6778.266
+    Google Chrome Версия 133.0.6943.99 (Официальная сборка), (64 бит)
+  steps-to-reproduce: |
+    1. Открываем DevTools, вкладку Performance
+    2. Обновить страницу(F5)
+  expected-result: |
+    Локальные метрики должны быть Largest Contentful Paint (LCP)<=2.5s, Cumulative Layout Shift (CLS)<=0.1, Interaction to Next Paint (INP)<=200ms
+  actual-result: |
+    Largest Contentful Paint (LCP) и Cumulative Layout Shift (CLS) выше нормы
