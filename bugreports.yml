@@ -136,7 +136,7 @@
     На странице товаров у товаров рейтинга нету, только в карточке товаров
 
 - summary: |
-    Ошибка загрузки файла random.css
+    Все ресурсы загружаются без ошибок
   environment: |
     Система:Windows 10 64-bit
     Opera Версия Chromium:131.0.6778.266
@@ -145,23 +145,9 @@
     1. Открываем DevTools, вкладку Network
     2. Обновить страницу(F5)
   expected-result: |
-    В DevTools, вкладке Network, после обновления файл random.css не веделен красным, не имеет Status=failed
+    В DevTools, вкладке Network, все ресурсы загружаются без ошибок
   actual-result: |
-    В DevTools, вкладке Network, после обновления файл random.css имеет Status=(failed)net::ERR_NAME_NOT_RESOLVED
-
-- summary: |
-    Ошибка загрузки файла author.js
-  environment: |
-    Система:Windows 10 64-bit
-    Opera Версия Chromium:131.0.6778.266
-    Google Chrome Версия 133.0.6943.99 (Официальная сборка), (64 бит)
-  steps-to-reproduce: |
-    1. Открываем DevTools, вкладку Network
-    2. Обновить страницу(F5)
-  expected-result: |
-    В DevTools, вкладке Network, после обновления файл author.js не веделен красным, не имеет Status=failed
-  actual-result: |
-    В DevTools, вкладке Network, после обновления файл author.js имеет Status=(failed)net::ERR_NAME_NOT_RESOLVED
+    В DevTools, вкладке Network, после обновления файлы random.css и author.js имеют Status=(failed)net::ERR_NAME_NOT_RESOLVED
 
 - summary: |
     Отсутствует фильтрация по производителю на второй странице товаров
