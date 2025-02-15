@@ -84,13 +84,9 @@ test-cases:
     status: fail
 
   - summary: |
-      Проверка загрузки файла random.css
+      Все ресурсы загружаются без ошибок
     status: pass
   
-  - summary: |
-      Проверка загрузки файла author.js
-    status: pass
-
   - summary: |
       Проверка фильтрации по производителю на второй странице товаров
     status: fail
